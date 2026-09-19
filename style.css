@@ -1967,3 +1967,33 @@ button {
   }
 
 }
+
+/* =========================================
+   HERO MAKKAH PHOTO
+========================================= */
+
+.hero {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 25, 38, 0.90) 0%,
+      rgba(8, 25, 38, 0.72) 45%,
+      rgba(8, 25, 38, 0.35) 100%
+    ),
+    url("hero-makkah.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: 60% center;
+  }
+}
